@@ -5,4 +5,5 @@ Bundle-SymbolicName: Partitioner
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Automatic-Module-Name: Partitioner
-Export-Package: edu.kit.kastel.sdq.partitioner
+Export-Package: edu.kit.kastel.sdq.partitioner,
+ edu.kit.kastel.sdq.partitioner.json

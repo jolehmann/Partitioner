@@ -32,7 +32,7 @@ public class LinearSingleElementPartitioner implements Partitioner {
 
 	@Override
 	public boolean hasNext() {
-		return this.pointer < this.instances.size() - 1;
+		return this.initialized && this.pointer < this.instances.size() - 1;
 	}
 
 	@Override

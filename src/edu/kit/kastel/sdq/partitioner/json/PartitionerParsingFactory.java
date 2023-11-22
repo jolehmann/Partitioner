@@ -80,7 +80,7 @@ public class PartitionerParsingFactory {
 			ObjectMapper jacksonMapper = new ObjectMapper();
 			partitionersForJSON = jacksonMapper.readValue(new File(uri), PartitionersForJSON.class);
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 
 		return partitionersForJSON;

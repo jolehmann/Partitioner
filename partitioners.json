@@ -1,1 +1,1 @@
-{"partitioners":[{"type":"trivial","id":"firstP","instances":["Hello"," ","World"],"initialized":true},{"type":"linear","id":"secondP","instances":null,"initialized":false,"pointer":0}]}
+{"partitioners":[{"type":"trivial","id":"firstP","instances":["Hello"," ","World"],"initialized":true},{"type":"linear","id":"secondP","instances":["Hello"," ","World"],"initialized":true,"pointer":2}]}
