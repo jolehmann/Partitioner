@@ -3,7 +3,12 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Partitioner
 Bundle-SymbolicName: Partitioner
 Bundle-Version: 1.0.0.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Automatic-Module-Name: Partitioner
 Export-Package: edu.kit.kastel.sdq.partitioner,
+ edu.kit.kastel.sdq.partitioner.blackboard,
  edu.kit.kastel.sdq.partitioner.json
+Bundle-ClassPath: lib/jackson-annotations-2.13.5.jar,
+ lib/jackson-core-2.13.5.jar,
+ lib/jackson-databind-2.13.5.jar,
+ .
