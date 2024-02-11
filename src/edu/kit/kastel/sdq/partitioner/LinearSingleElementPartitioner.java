@@ -10,6 +10,12 @@ public class LinearSingleElementPartitioner implements Partitioner {
 	private boolean initialized;
 	private int pointer;
 
+	/**
+	 * A Partitioner that returns only one element after another.
+	 * Each partition consists of only one element.
+	 * 
+	 * @param id the name to reference this partitioner
+	 */
 	public LinearSingleElementPartitioner(String id) {
 		this.id = id;
 		this.reset();

@@ -8,6 +8,12 @@ public class TrivialPartitioner implements Partitioner {
 	private List<String> instances;
 	private boolean initialized;
 
+	/**
+	 * A Partitioner that returns every element at once.
+	 * There is only one partition consisting of all elements.
+	 * 
+	 * @param id the name to reference this partitioner
+	 */
 	public TrivialPartitioner(String id) {
 		this.id = id;
 		this.instances = null;

@@ -5,8 +5,13 @@ import java.util.List;
 
 import edu.kit.kastel.sdq.partitioner.Partitioner;
 
+/**
+ * Wrapping class for json Serialization
+ * 
+ * @author Jonas Lehmann
+ */
 public class PartitionersForJSON {
-	
+
 	List<Partitioner> partitioners;
 
 	public PartitionersForJSON() {
@@ -16,7 +21,7 @@ public class PartitionersForJSON {
 	public PartitionersForJSON(List<Partitioner> partitioners) {
 		this.partitioners = partitioners;
 	}
-	
+
 	public List<Partitioner> getPartitioners() {
 		return partitioners;
 	}
