@@ -53,6 +53,14 @@ public class TrivialPartitioner implements Partitioner {
 	public List<String> currentPartition() {
 		return this.instances; // could be null if not initialized.
 	}
+	
+	@Override
+	public int getNumberOfIncrementationsSinceLastInit() {
+		if(!this.initialized) {
+			return -1;
+		}
+		return 0;
+	}
 
 	// For JSON Serialization ------------------------------------------
 	public List<String> getInstances() {

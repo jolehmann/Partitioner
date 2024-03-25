@@ -67,6 +67,14 @@ public class LinearSingleElementPartitioner implements Partitioner {
 		this.initialized = false;
 		this.pointer = 0;
 	}
+	
+	@Override
+	public int getNumberOfIncrementationsSinceLastInit() {
+		if (!this.initialized) {
+			return -1;
+		}
+		return this.pointer;
+	}
 
 	// For JSON Serialization ------------------------------------------
 	public List<String> getInstances() {

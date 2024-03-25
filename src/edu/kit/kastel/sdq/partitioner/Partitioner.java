@@ -56,4 +56,15 @@ public interface Partitioner {
 	 * @return the partition for the current iteration as a list.
 	 */
 	public List<String> currentPartition();
+
+	/**
+	 * Returns a number between 0 and size(partitions-1), where 0 means that it is
+	 * still the first partition, and it wasn't set to next yet. If the partitioner
+	 * has 10 different partitions it will return the number 9 in its last step.
+	 * <br><br>
+	 * If the Partitioner isn't initialized yet, it will return (-1).
+	 * 
+	 * @return number out of [-1, size(partitions - 1)]
+	 */
+	public int getNumberOfIncrementationsSinceLastInit();
 }
